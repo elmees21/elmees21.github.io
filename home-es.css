@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  gap: 0px;
+  margin-top: 2px;
+}
+
+.button {
+  padding: 4px 4px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 1px;
+}
+
+.header-right .language-dropdown {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.language-dropdown label {
+  margin-right: 5px;
+}
+
+.language-dropdown select {
+  padding: 2px;
+}
+
+/* Estilos para la sección de foto */
+.photo {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.photo img {
+  width: 175px;
+  border-radius: 50%;
+  transition: transform 0.75s ease-in-out;
+}
+
+.photo img:hover {
+  transform: scale(1.25) rotate(360deg);
+}
+
+.bio {
+  text-align: center;
+  margin: 60px;
+}
+
+.social {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los botones de redes sociales */
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.button.twitter {
+  background-color: #1DA1F2;
+}
+
+.button.discord {
+  background-color: #7289DA;
+}
+
+.button.telegram {
+  background-color: #0088CC;
+}
+
+.button.youtube {
+  background-color: #FF0000;
+}
+
+.button.twitch {
+  background-color: #6441A4;
+}
+
+.button.instagram {
+  background-color: #C13584;
+}
+
+.button.linktree {
+  background-color: #32CD32;
+}
+
+.button.itchio {
+  background-color: #FF5396;
+}
+
+.button.github {
+  background-color: #333333;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
