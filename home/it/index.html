@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eloi Mesa</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://github.com/elmees21/elmees21.github.io/blob/b8aa07f13ae5118d7fac8c8965aa140017cc0726/favicon.png?raw=true" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+  <script src="../scripts.js"></script>
+</head>
+<body>
+  <div id="loader"></div>
+  <header>
+    <button class="open-sidebar-btn" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="header-left">
+      <h1>Eloi Mesa</h1>
+      <p class="subtitle">Benvenuti nel mio sito web personale</p>
+    </div>
+</header>
+
+  <div class="sidebar">
+    <button class="close-sidebar-btn" onclick="toggleSidebar()">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="sidebar-content">
+      <h1>Eloi Mesa</h1>
+      <div class="language-selector">
+        <div class="selected-language">
+            <i class="fas fa-globe"></i>
+            <span class="current-language">Italiano</span>
+        </div>
+        <ul class="language-options">
+            <li><a href="https://elmees21.github.io/home/en/" class="language-option"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Icons-flag-us.png" alt="EN"> English</a></li>
+            <li><a href="https://elmees21.github.io/home/ca" class="language-option"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Icons-flag-es-ct.png" alt="CA"> Català</a></li>
+            <li><a href="https://elmees21.github.io/home/es/" class="language-option"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Icons-flag-es.png" alt="ES"> Castellano</a></li>  
+            <li><a href="https://elmees21.github.io/home/it" class="language-option"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Icons-flag-it.png" alt="IT"> Italiano</a></li>
+            <li><a href="https://elmees21.github.io" class="language-option"><i class="fa-solid fa-language"></i><b>All languages</b></a></li>
+
+          </ul>
+    </div>
+    <p> ―――――― </p>
+      <a href="https://elmees21.github.io/" class="button"><i class="fa-solid fa-home"></i> Inizio</a>
+      <a href="https://elmees21.github.io/projects" class="button"><i class="fa-solid fa-arrow-pointer"></i> Giochi e progetti</a>
+      <a href="https://elmees21.github.io/posts" class="button"><i class="fa-solid fa-message"></i> Pubblicazioni</a>
+      <a href="https://elmees21.github.io/faq" class="button"><i class="fa-solid fa-circle-question"></i> Domande frequenti</a>
+    </div>
+  </div>
+
+  <section class="photo">
+    <img id="profile-img" src="https://ugc.production.linktr.ee/39cebe68-dad6-410f-b820-fbbb6c2e94f5_descarrega-1-1.png" alt="Foto di Eloi Mesa">
+  </section>
+  
+  <section class="bio">
+    <p><b>Nome completo:</b> Eloi Mesa Escudero</p>
+    <p><b>Lingue:</b> Spagnolo, Catalano e Inglese (Livello medio)</p>
+    <p><b>Località:</b> Barcellona, Catalogna, Spagna</p>
+
+    <details>
+      <summary> <b> Leggi la mia biografia </b></summary>
+      <h2>Biografia</h2>
+      <p>Ciao, sono Eloi Mesa, uno studente catalano appassionato di programmazione e videogiochi. Adoro passare ore davanti al computer, imparare nuove abilità e creare cose nuove ed interessanti. Ho scoperto la programmazione per caso e da allora ne sono diventato appassionato. Nel futuro, spero di poter continuare a studiare e migliorare le mie competenze di programmazione.</p>
+      <p>Oltre alla programmazione, mi piacciono molto i videogiochi. Adoro godere di avventure immersive e vedere con cosa mi sorprendono gli sviluppatori. Condividere le mie opinioni ed esperienze sui giochi è qualcosa che mi diverte molto. Sul mio sito web personale, condivido i miei progetti di programmazione, le analisi dei videogiochi e riflessioni su diversi argomenti. Adoro interagire con i visitatori e ascoltare le loro opinioni e suggerimenti.</p>
+      <p>Grazie per aver letto di me, spero che tu possa divertirti con i miei contenuti tanto quanto io mi diverto a crearli. A presto!</p>
+      <hr>
+    </details>
+    <h2></h2>
+    <a href="https://elmees21.github.io/projects" target="_parent" class="button"><i class="fa-solid fa-arrow-pointer"></i> Vedi i miei progetti e giochi</a>
+    <a href="https://elmees21.github.io/posts" target="_parent" class="button"><i class="fa-solid fa-message"></i> Le mie pubblicazioni</a>
+    <a href="https://elmees21.github.io/faq" target="_parent" class="button"><i class="fa-solid fa-circle-question"></i> Domande frequenti su di me</a>  
+  </section>
+  <section class="social">
+    <h2>Media Sociali e altro:</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/eloi.mesa/" target="_blank" class="button instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/elmees21" target="_blank" class="button twitter"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a>
+      <a href="https://t.me/eloi546" target="_blank" class="button telegram"><i class="fab fa-telegram"></i> Telegram</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/elmees21" target="_blank" class="button github"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.discordapp.com/users/539486417936449546" target="_blank" class="button discord"><i class="fab fa-discord"></i> Discord DM</a>
+      <a href="https://eloi546.itch.io/" target="_blank" class="button itchio"><i class="fa-brands fa-itch-io"></i> Itch.io</a>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:eloi.mesa@outlook.com">Contatto</a>
+      <a href="https://elmees21.github.io/privacy/">Informativa sulla privacy</a>
+    </div>
+  </footer>
+</body>
+</html>
