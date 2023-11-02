@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h3>4. Changes to this Privacy Policy</h3>
             <p>We may update this Privacy Policy to reflect changes in our practices or for other operational, legal or regulatory reasons. Please check this page periodically for updates.</p>
             <h3>5. Contact information</h3>
-            <p>If you have any questions or concerns about this Privacy Policy or the practices of this website, please contact the owner at [contact@email.com].</p>
+            <p>If you have any questions or concerns about this Privacy Policy or the practices of this website, please contact the owner at eloi.mesa@outlook.com.</p>
             <p>By using this website, you agree to the terms of this Privacy Policy. Thank you for your interest and attention.</p>
             <p>Last update: September 22, 2023</p>
         `,
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h3>4. Cambios en esta Política de Privacidad</h3>
             <p>Podríamos actualizar esta Política de Privacidad para reflejar cambios en nuestras prácticas u otras razones operativas, legales o regulatorias. Por favor, consulte esta página periódicamente para obtener actualizaciones.</p>
             <h3>5. Información de contacto</h3>
-            <p>Si tiene alguna pregunta o inquietud acerca de esta Política de Privacidad o las prácticas de este sitio web, póngase en contacto con el propietario en [contact@email.com].</p>
+            <p>Si tiene alguna pregunta o inquietud acerca de esta Política de Privacidad o las prácticas de este sitio web, póngase en contacto con el propietario en eloi.mesa@outlook.com.</p>
             <p>Al utilizar este sitio web, usted acepta los términos de esta Política de Privacidad. Gracias por su interés y atención.</p>
             <p>Última actualización: 22 de septiembre de 2023</p>
         `,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h3>4. Canvis en aquesta Política de Privadesa</h3>
             <p>Podríem actualitzar aquesta Política de Privadesa per reflectir canvis en les nostres pràctiques o per altres raons operatives, legals o reguladores. Consulti aquesta pàgina periòdicament per a obtenir actualitzacions.</p>
             <h3>5. Informació de contacte</h3>
-            <p>Si té alguna pregunta o preocupació sobre aquesta Política de Privadesa o les pràctiques d'aquest lloc web, posi's en contacte amb el propietari a [contact@email.com].</p>
+            <p>Si té alguna pregunta o preocupació sobre aquesta Política de Privadesa o les pràctiques d'aquest lloc web, posi's en contacte amb el propietari a eloi.mesa@outlook.com.</p>
             <p>Utilitzant aquest lloc web, vostè accepta els termes d'aquesta Política de Privadesa. Gràcies pel seu interès i atenció.</p>
             <p>Última actualització: 22 de setembre de 2023</p>
 
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h3>4. Modifiche a questa Informativa sulla Privacy</h3>
             <p>Potremmo aggiornare questa Informativa sulla Privacy per riflettere modifiche nelle nostre pratiche o per altre ragioni operative, legali o regolamentari. Controlli questa pagina periodicamente per gli aggiornamenti.</p>
             <h3>5. Informazioni di contatto</h3>
-            <p>Se ha domande o preoccupazioni riguardo a questa Informativa sulla Privacy o alle pratiche di questo sito web, si metta in contatto con il proprietario all'indirizzo [contact@email.com].</p>
+            <p>Se ha domande o preoccupazioni riguardo a questa Informativa sulla Privacy o alle pratiche di questo sito web, si metta in contatto con il proprietario all'indirizzo eloi.mesa@outlook.com.</p>
             <p>Utilizzando questo sito web, accetta i termini di questa Informativa sulla Privacy. Grazie per il suo interesse e attenzione.</p>
             <p>Ultimo aggiornamento: 22 settembre 2023</p>            
         `,
