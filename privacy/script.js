@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Si té alguna pregunta o preocupació sobre aquesta Política de Privadesa o les pràctiques d'aquest lloc web, posi's en contacte amb el propietari a [contact@email.com].</p>
             <p>Utilitzant aquest lloc web, vostè accepta els termes d'aquesta Política de Privadesa. Gràcies pel seu interès i atenció.</p>
             <p>Última actualització: 22 de setembre de 2023</p>
-        
+
         `,
         it: `
             <h2>Informativa sulla Privacy per il Sito Web Personale di Eloi Mesa</h2>
@@ -82,17 +82,13 @@ document.addEventListener("DOMContentLoaded", function() {
         `,
     };
 
-    // Función para cambiar el idioma y cargar la política correspondiente
+    const userLanguage = navigator.language || navigator.userLanguage;
+    const defaultLanguage = userLanguage.split("-")[0]; 
+    const selectedLanguage = policies.hasOwnProperty(defaultLanguage) ? defaultLanguage : "en";
+    languageSelector.value = selectedLanguage;
+    privacyPolicy.innerHTML = policies[selectedLanguage];
     languageSelector.addEventListener("change", function() {
         const selectedLanguage = languageSelector.value;
         privacyPolicy.innerHTML = policies[selectedLanguage];
     });
-
-    // Llamada inicial para cargar la política en inglés
-    privacyPolicy.innerHTML = policies["en"];
 });
-
-// Función para retroceder en el historial del navegador
-function goBack() {
-    window.history.back();
-}
