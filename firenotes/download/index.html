@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon-128.png">
+    <title>FireNotes - Download</title>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="languageSelector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ca">Català</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
+    <div class="header">
+        <img id="programIcon" src="https://elmees21.github.io/firenotes/icon-128.png" alt="Program Icon">
+        <h1 id="appTitle"></h1>
+        <hr>
+    </div>
+    
+    
+    <div class="browser-section">
+        <img id="browserIcon" src="firefox.png" alt="Browser Icon">
+        <h3 id="downloadText"></h3>
+        <h3 id="browserName"></h3>
+        <p><i>v1.1</i></p>
+        <button id="prodownloadButton" class="download-button">Download</button>
+        <p> </p>
+        <p> </p>
+        <h1> </h1>
+        <hr>
+    </div>    
+
+    
+    <div class="downloads">
+        <div class="browser-download">
+            <img src="img/firefox.png" alt="Firefox Icon">
+            <h2>FireNotes Firefox</h2>
+            <p>Firefox Add-ons</p>
+            <button class="download-button" onclick="window.location.href = 'https://addons.mozilla.org/firefox/addon/firenotes/'"></button>
+        </div>
+        <div class="browser-download">
+            <img src="img/chrome.png" alt="Chrome Icon">
+            <h2>FireNotes Chrome</h2>
+            <p>Chrome Web Store</p>
+            <button class="download-button" onclick="window.location.href = 'https://chrome.google.com/webstore/detail/firenotes-notepad/feammnbfalinhgkhojdpolpdoijifdaa'"></button>
+        </div>
+        <div class="browser-download">
+            <img src="img/edge.png" alt="Edge Icon">
+            <h2>FireNotes Edge</h2>
+            <p>Microsoft Edge Add-ons</p>
+            <button class="download-button" onclick="window.location.href = 'https://microsoftedge.microsoft.com/addons/detail/khigpoaojpepipkhkbjinannhjhippgg'"></button>
+        </div>
+        <div class="browser-download">
+            <img src="img/web.png" alt="Web Icon">
+            <h2 id="webTitle"></h2>
+            <p id="webDescription"></p>
+            <button id="webversionButton" class="download-button" onclick="window.location.href = 'https://elmees21.github.io/firenotes/web-version/'"></button>        </div>
+    </div>
+    <hr>
+            <div class="help-section">
+            <h2 id="helpTitle"></h2>
+            <p id="helpDescription"></p>
+            <a id="helpLink" class="help-link" href="https://elmees21.github.io/firenotes/help/#introduction"></a>
+        </div>
+    </div>
+    <h1></h1>
+    <hr>
+    <button id="exitButton" onclick="window.location.href = 'https://elmees21.github.io/firenotes/'"></button>
+    <h1></h1>
+    <footer>
+        <ul>
+            <li><a href="https://elmees21.github.io/firenotes/privacy-w">Privacy Policy</a></li>
+            <li><a href="https://elmees21.github.io/">My Website</a></li>
+            <li><a href="https://github.com/elmees21/firenotes/blob/main/changelog.md">Changelog</a></li>
+            <li><a href="mailto:eloi.mesa@outlook.com">Contact</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

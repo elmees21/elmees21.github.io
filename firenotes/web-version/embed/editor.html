@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editorcss.css">
+    <title id="title">FireNotes</title>
+    <link rel="icon" href="images/icon-48.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="editor-icons" class="vertical-align">
+            <select id="font-select" class="font-select light-mode">
+                <option value="Arial">Arial</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="monospace">Monospace</option>
+                <option value="cursive">Cursive</option>
+            </select>            
+            <button id="decrease-font-size">
+                <img src="images/zoom2.png" alt="Zoom -" width="28" height="28">
+            </button>
+            <button id="increase-font-size">
+                <img src="images/zoom.png" alt="Zoom +" width="28" height="28">
+            </button>
+            <button id="copy-text" class="fire-emoji">
+                <img src="images/fire.png" alt="Fuego" width="28" height="28">
+            </button>
+        </div>
+        <button id="settings-button">
+            <img src="images/settings.png" alt="Ajustes" width="28" height="28">
+        </button>
+        <button id="return-button" style="display: none;">
+            <img src="images/arrow.png" alt="Exit" width="28" height="28">
+        </button>
+    </header>
+    <main>
+        <textarea id="note-text"></textarea>
+    </main>
+    <div id="notification" class="notification">
+        ¡FireNoted!
+        <img src="images/fire-noti.png" alt="Fuego" width="30" height="30">
+    </div>
+    <div id="settings-menu" class="settings-menu" style="display: none;">
+        <img src="images/icon-48.png" alt="FireNotes" width="64" height="64">
+        <h1 id="about-title">FireNotes</h1>
+        <p>elmees21 - v1.0 (Web Version)</p>
+        <h3 id="separator"> </h3>  
+        <hr>
+        <h2><u id="settings-heading">Configuración:</u></h2>
+        <h3 id="reset-heading">Restablecer a valores predeterminados</h3>
+        <p id="reset-description">Esto borrará el texto en memoria,<br> el tamaño de texto actual y la fuente.</p>
+        <button id="reset-button">Restablecer</button>
+        <div></div>
+        <h3 id="dark-mode-heading">Modo oscuro</h3>
+        <p id="dark-mode-description">Mejora la legibilidad y reduce la fatiga visual</p>
+        <h3 id="separator"> </h3>
+        <label class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <span class="slider round"></span>
+          </label>                   
+        <h3 id="language-label">Idioma</h3>
+        <select id="language-select" class="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ca">Català</option>
+            <option value="it">Italiano</option>
+        </select>
+        <h3></h3>
+        <hr>
+        <h3 id="other-heading">Otros</h3>
+        <button id="about-button">Acerca de</button>
+        <button id="web-button">Ayuda</button>        
+        <button id="rate-button">Descargar</button>
+        <h3 id="separator"> </h3>
+        <div> </div>
+        <p> <i> Hecho por elmees21</i> </p>
+        <div> </div>  
+        <h3 id="separator"> </h3>  
+    </div>
+    <script src="editorscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-size: 80%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6600;
+    padding: 10px 15px; 
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+#go-back {
+    background: none;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+#go-back:hover {
+    transform: scale(1.05); 
+}
+
+main {
+    padding: 20px;
+}
+
+#privacy-policy {
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 5px;
+}
+
+.language-selector {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.language-selector:hover {
+    background-color: #ff5500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.language-selector-content {
+    background-color: #ff6600;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.language-selector-content.active {
+    display: flex;
+}
+
+footer {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #222; 
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mini-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; 
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, font-size 0.2s ease; 
+    margin-top: 10px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+
+.mini-button:hover {
+    background-color: #ff5500;
+    font-size: 85%; 
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: underline; 
+}
+
+a:visited {
+    color: #3366cc; 
+  }

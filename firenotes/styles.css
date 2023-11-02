@@ -1,0 +1,158 @@
+/* CSS */
+body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header {
+    padding: 20px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    font-size: 16px;
+    font-style: italic;
+    color: #ffcc00;
+}
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+    color: #bbb;
+    margin: 10px 0;
+}
+
+.download-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #ff5500;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #222; /* Cambia el color de fondo según tus preferencias */
+    width: 100%; /* Establece el ancho al 100% */
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el selector de idioma */
+.language-selector {
+    margin-top: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.language-selector select {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.language-selector select:hover {
+    background-color: #ff5500;
+}
+
+/* Estilos para las imágenes de las diapositivas */
+.text {
+    text-align: center;
+    max-width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.text img {
+    max-width: 75%; /* Las imágenes son un 25% más pequeñas */
+    border-radius: 10px; /* Borde redondeado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text img:hover {
+    transform: scale(1.05); /* Aplica un ligero zoom al pasar el cursor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al pasar el cursor */
+}
+
+.mini-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Ajusta el tamaño del padding según tus preferencias */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, font-size 0.2s ease; /* Agregamos transición de transform y tamaño de fuente */
+    margin-top: 10px; /* Ajusta el margen según tus preferencias */
+    border-radius: 5px; /* Agregamos bordes redondeados */
+    font-size: 14px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+.mini-button:hover {
+    background-color: #ff5500;
+    transform: scale(1.02); /* Aumenta el tamaño al pasar el cursor */
+    font-size: 101%; 
+}

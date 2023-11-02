@@ -1,0 +1,135 @@
+body {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    pointer-events: none;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.language-selector {
+    margin-top: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.language-selector select {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.language-selector select:hover {
+    background-color: #ff5500;
+}
+
+.header {
+    padding: 20px;
+}
+
+#programIcon, #browserIcon {
+    width: 64px;
+    height: 64px;
+}
+
+#programIcon, #browserIcon, #currentBrowser {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#downloadButton, .download-button, .web-link, #exitButton, #webversionButton, .web-version {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 7.5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: Arial, sans-serif; 
+}
+
+#downloadButton:hover, .download-button:hover, .web-link:hover, #exitButton:hover, #webversionButton:hover, .web-version:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+
+a:visited {
+    color: white;
+}
+
+.downloads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.browser-download, .web-version {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #222; 
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.browser-download img, .web-version img {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+a {
+    color: white;
+}
