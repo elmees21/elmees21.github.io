@@ -1,56 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Eloi Mesa</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #222222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-    #curtain {
-      width: 100%;
-      height: 100%;
-      background-color: #222222;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-    }
-    #logo {
-      width: 158px;
-      height: 158px;
-      opacity: 0;
-      animation: fadeIn 4s forwards;
-      z-index: 1;
-    }
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>Select a language - Eloi Mesa</title>
 </head>
 <body>
-  <img id="logo" src="logo.png" alt="Logo">
-  <script>
-    window.addEventListener('beforeunload', function() {
-      document.getElementById('logo').style.opacity = '0';
-    });
+    <div id="language-container">
+        <div id="language-title">
+            Select a language
+        </div>
+        <div id="language-list">
+            <a href="https://elmees21.github.io/home/en/" class="language-button">
+                <div class="language-content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_the_United_States_%281896-1908%2C_3-2_aspect_ratio%29.svg/120px-Flag_of_the_United_States_%281896-1908%2C_3-2_aspect_ratio%29.svg.png" alt="English">
+                    <div class="language-text">
+                        <div class="language-name">English</div>
+                        <div class="language-english">(United States of America)</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://elmees21.github.io/home/ca/" class="language-button">
+                <div class="language-content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/120px-Flag_of_Catalonia.svg.png" alt="Catalan">
+                    <div class="language-text">
+                        <div class="language-name">Català</div>
+                        <div class="language-english">Catalan</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://elmees21.github.io/home/es/" class="language-button">
+                <div class="language-content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simplified_Flag_of_Spain_%28civil_variant%29.svg/120px-Simplified_Flag_of_Spain_%28civil_variant%29.svg.png" alt="Castillian">
+                    <div class="language-text">
+                        <div class="language-name">Castellano</div>
+                        <div class="language-english">Spanish (Spain)</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://elmees21.github.io/home/it/" class="language-button">
+                <div class="language-content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/120px-Flag_of_Italy.svg.png" alt="Italian">
+                    <div class="language-text">
+                        <div class="language-name">Italiano</div>
+                        <div class="language-english">Italian</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://elmees21.github.io/home/translate" class="language-button">
+                <div class="language-content">
+                    <img src="gt.png" alt="Google Translate">
+                    <div class="language-text">
+                        <div class="language-name">More languages</div>
+                        <div class="language-english">Visit the main website in your language</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-    window.onload = function() {
-      setTimeout(function() {
-        window.location.href = 'https://elmees21.github.io/lang/';
-      }, 2500); 
-    };
-  </script>
+    <footer>
+        <div id="footer-links">
+            <a href="https://elmees21.github.io/privacy/">Privacy Policy -</a>
+            <a href="https://elmees21.github.io/help">Help</a>
+        </div>
+    </footer>
 </body>
 </html>
