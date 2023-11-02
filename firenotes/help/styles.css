@@ -1,4 +1,3 @@
-/* CSS */
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -11,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #ff6600;
-    padding: 10px 15px; /* Añadidos márgenes horizontal de 15px */
+    padding: 10px 15px; 
     color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,11 +27,11 @@ h1 {
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Animación al pasar el cursor */
+    transition: transform 0.3s ease; 
 }
 
 #go-back:hover {
-    transform: scale(1.05); /* Escalar ligeramente al pasar el cursor */
+    transform: scale(1.05); 
 }
 
 main {
@@ -44,7 +43,6 @@ main {
     color: #fff;
 }
 
-/* Estilos para el selector de idiomas */
 .language-selector {
     background-color: #ff6600;
     color: #fff;
@@ -61,7 +59,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para el contenido del selector de idiomas al hacer clic */
 .language-selector-content {
     background-color: #ff6600;
     color: #fff;
@@ -82,8 +79,8 @@ main {
 footer {
     padding: 15px 0;
     text-align: center;
-    background-color: #222; /* Cambia el color de fondo según tus preferencias */
-    width: 100%; /* Establece el ancho al 100% */
+    background-color: #222; 
+    width: 100%; 
     position: absolute;
     left: 0;
     right: 0;
