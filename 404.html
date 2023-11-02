@@ -6,121 +6,128 @@
     <link rel="icon" href="https://github.com/elmees21/elmees21.github.io/blob/b8aa07f13ae5118d7fac8c8965aa140017cc0726/favicon.png?raw=true" type="image/png">
     <style>
         * {
-        margin:0;
-        padding:0;
-        box-sizing:border-box
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-        font-family:'Poppins',sans-serif;
-        background-color:#292929;
-        color:#fff;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        height:100vh
+            font-family: 'Poppins', sans-serif;
+            background-color: #292929;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         header {
-        text-align:center;
-        background-color:#000;
-        padding:10px 0;
-        width:100%;
-        color:#fff;
-        position:absolute;
-        top:0
+            text-align: center;
+            background-color: #000;
+            padding: 10px 0;
+            width: 100%;
+            color: #fff;
+            position: absolute;
+            top: 0;
         }
 
         h1 {
-        font-size:2rem;
-        font-weight:500
+            font-size: 2rem;
+            font-weight: 500;
         }
 
         main {
-        text-align:center;
-        position:relative;
-        top:60px
+            text-align: center;
+            position: relative;
+            top: 60px;
         }
 
         #language-dropdown {
-        display:inline-block;
-        color:#fff;
-        background-color:#fff;
-        margin-top:10px;
-        margin-bottom:10px
+            display: inline-block;
+            color: #fff;
+            background-color: #fff;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         #language-selector {
-        background-color:#333;
-        color:#fff;
-        border:none;
-        padding:5px 10px;
-        cursor:pointer;
-        font-size:16px;
-        font-family:Arial,sans-serif
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
         }
 
         #error-container {
-        text-align:center;
-        animation:fallIn 1s ease-in-out
+            text-align: center;
+            animation: fallIn 1s ease-in-out;
         }
 
         #error-animation {
-        display:inline-block;
-        font-size:4rem;
-        font-family:'DotGothic16',sans-serif;
-        color:red
+            display: inline-block;
+            font-size: 4rem;
+            font-family: 'DotGothic16', sans-serif;
+            color: red;
         }
 
         #error-digit {
-        display:inline-block
+            display: inline-block;
         }
 
         #error-message {
-        font-size:1.5rem;
-        font-weight:500;
-        margin-top:10px;
-        color:red
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 10px;
+            color: red;
         }
 
         #buttons {
-        margin-top:30px
+            margin-top: 30px;
         }
 
         a {
-        background-color:#444;
-        color:#fff;
-        padding:10px 20px;
-        border:none;
-        border-radius:5px;
-        cursor:pointer;
-        font-weight:700;
-        font-size:1rem;
-        transition:background-color 0.3s,color .3s;
-        margin:0 10px;
-        text-decoration:none
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 10px;
+            text-decoration: none;
         }
 
         a:hover {
-        background-color:#222
+            background-color: #222;
         }
 
         @keyframes fallIn {
-        0% {
-        transform:translateY(-200px);
-        opacity:0
-        }
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
 
-        100% {
-        transform:translateY(0);
-        opacity:1
-        }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         .animated {
-        animation:fadeIn 1s ease-in-out .5s
-    }
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        @font-face {
+            font-family: 'DotGothic16';
+            src: url('DotGothic16-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -153,12 +160,13 @@
             };
 
             const userLang = navigator.language || navigator.userLanguage;
+            const defaultLanguage = userLang.split("-")[0]; 
 
-            if (content[userLang]) {
-                languageSelector.value = userLang;
-                errorMessage.textContent = content[userLang].message;
-                goBackButton.textContent = content[userLang].goBackButton;
-                mainButton.textContent = content[userLang].mainButton;
+            if (content[defaultLanguage]) {
+                languageSelector.value = defaultLanguage;
+                errorMessage.textContent = content[defaultLanguage].message;
+                goBackButton.textContent = content[defaultLanguage].goBackButton;
+                mainButton.textContent = content[defaultLanguage].mainButton;
             } else {
                 languageSelector.value = "en";
                 errorMessage.textContent = content.en.message;
