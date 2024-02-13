@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://github.com/elmees21/elmees21.github.io/blob/b8aa07f13ae5118d7fac8c8965aa140017cc0726/favicon.png?raw=true" type="image/png">
+    <style>
+        * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box
+        }
+
+        body {
+        font-family:'Poppins',sans-serif;
+        background-color:#eeeeee;
+        color:#fff;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:100vh
+        }
+
+        header {
+        text-align:center;
+        background-color:#000;
+        padding:10px 0;
+        width:100%;
+        color:#fff;
+        position:absolute;
+        top:0
+        }
+
+        h1 {
+        font-size:2rem;
+        font-weight:500
+        }
+
+        main {
+        text-align:center;
+        position:relative;
+        top:60px
+        }
+
+        #language-dropdown {
+        display:inline-block;
+        color:#fff;
+        background-color:#fff;
+        margin-top:10px;
+        margin-bottom:10px
+        }
+
+        #language-selector {
+        background-color:#333;
+        color:#fff;
+        border:none;
+        padding:5px 10px;
+        cursor:pointer;
+        font-size:16px;
+        font-family:Arial,sans-serif
+        }
+
+        #error-container {
+        text-align:center;
+        animation:fallIn 1s ease-in-out
+        }
+
+        #error-animation {
+        display:inline-block;
+        font-size:4rem;
+        font-family:'DotGothic16',sans-serif;
+        color:red
+        }
+
+        #error-digit {
+        display:inline-block
+        }
+
+        #error-message {
+        font-size:1.2rem;
+        font-weight:500;
+        margin-top:10px;
+        color: #0086c4; 
+        }
+
+        #buttons {
+        margin-top:30px
+        }
+
+        a {
+        background-color:#444;
+        color:#fff;
+        padding:10px 20px;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        font-weight:700;
+        font-size:1rem;
+        transition:background-color 0.3s,color .3s;
+        margin:0 10px;
+        text-decoration:none
+        }
+
+        a:hover {
+        background-color:#222
+        }
+
+        @keyframes fallIn {
+        0% {
+        transform:translateY(-200px);
+        opacity:0
+        }
+
+        100% {
+        transform:translateY(0);
+        opacity:1
+        }
+        }
+
+        .animated {
+        animation:fadeIn 1s ease-in-out .5s
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const languageSelector = document.getElementById("language-selector");
+            const errorMessage = document.getElementById("error-message");
+            const goBackButton = document.getElementById("go-back");
+            const mainButton = document.getElementById("main-button");
+
+            const content = {
+                en: {
+                    message: "Soon, you will be able to see my posts on 'Eloi Posts'!",
+                    goBackButton: "Back",
+                    mainButton: "Main Page",
+                },
+                es: {
+                    message: "¡Próximamente, podrás ver mis publicaciones en 'Eloi Posts'!",
+                    goBackButton: "Volver",
+                    mainButton: "Página Principal",
+                },
+                ca: {
+                    message: "Pròximament, podràs veure les meves publicacions a 'Eloi Posts'!",
+                    goBackButton: "Tornar",
+                    mainButton: "Pàgina Principal",
+                },
+                it: {
+                    message: "Presto potrai vedere i miei post su 'Eloi Post'!",
+                    goBackButton: "Indietro",
+                    mainButton: "Pagina Principale",
+                },
+            };
+
+            const userLang = navigator.language || navigator.userLanguage;
+
+            if (content[userLang]) {
+                languageSelector.value = userLang;
+                errorMessage.textContent = content[userLang].message;
+                goBackButton.textContent = content[userLang].goBackButton;
+                mainButton.textContent = content[userLang].mainButton;
+            } else {
+                languageSelector.value = "en";
+                errorMessage.textContent = content.en.message;
+                goBackButton.textContent = content.en.goBackButton;
+                mainButton.textContent = content.en.mainButton;
+            }
+
+            const options = languageSelector.getElementsByTagName("option");
+            for (let option of options) {
+                option.textContent = option.textContent.replace(/🇺🇸|🇪🇸|🇦🇩|🇮🇹/, '');
+            }
+
+            languageSelector.addEventListener("change", function() {
+                const selectedLanguage = languageSelector.value;
+                errorMessage.textContent = content[selectedLanguage].message;
+                goBackButton.textContent = content[selectedLanguage].goBackButton;
+                mainButton.textContent = content[selectedLanguage].mainButton;
+            });
+
+            goBackButton.addEventListener("click", goBack);
+            mainButton.addEventListener("click", goToMainPage);
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function goToMainPage() {
+            window.location.href = "https://elmees21.github.io/";
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap">
+    <style>
+        @font-face {
+            font-family: 'DotGothic16';
+            src: url('DotGothic16-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <title>Coming soon! - Eloi Mesa</title>
+</head>
+<body>
+    <header>
+        <h1>Eloi Mesa</h1>
+        <div id="language-dropdown">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="es">Castellano</option>
+                <option value="ca">Català</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="error-container">
+            <div id="error-animation">
+                <img src="epost.png" alt="Placeholder" width="128" height="128" class="animated" />
+            </div>
+            <p id="error-message" class="animated">¡Próximamente podrás ver mis novedades en 'Eloi Posts'!</p>
+            <div id="buttons">
+                <a href="javascript:void(0);" id="go-back" class="animated">Volver</a>
+                <a href="https://elmees21.github.io/" id="main-button" class="animated">Página Principal</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
